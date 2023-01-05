@@ -1,0 +1,49 @@
+body{
+  background-color: #14171A;
+  margin: 0;
+  color: white;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+
+.App{
+ width: 50%;
+ height: 100vh;
+ margin: 0 auto;
+ padding:  2rem;
+}
+
+.form{
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+input{
+    color: #657786; 
+    background-color: transparent;
+    border: none;
+    outline: none;
+    height: 5rem;
+    caret-color: royalblue;
+    margin-right: 1rem;
+}
+
+.avatar{
+  height:50px;
+  width:50px;
+  border-radius:50%;
+  vertical-align: middle;
+  margin-right: 1rem;
+}
+
+button{
+  color: rgb(203, 203, 203);
+  background-color: #5594e3;
+  border-radius: 10px;
+  padding: 0.5rem;
+  border: none;
+  cursor: pointer;
+}
