@@ -4,7 +4,7 @@ import UserLogo from "../assets/user.png"
 
 const Avatar = () => {
   return (
-    <img src={UserLogo} className="avatar" />
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjYmlp9JDeNMaFZzw9S3G1dVztGqF_2vq9nA&usqp=CAU" className="avatar" />
   )
 }
 

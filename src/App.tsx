@@ -21,11 +21,13 @@ function App() {
     <div className="App">
       <div className='form'>
         <Avatar/>
+
         <form onSubmit={handleSubmit}>
           <input onChange={handleChange} value={text} type="text" placeholder='¿En qué estas pensando?'/>
-          <button type='submit'>Agregar</button>
+          <button type='submit'>Tweet</button>
         </form>
       </div>
+      
       <Tweets data={tweets} />
     </div>
   )

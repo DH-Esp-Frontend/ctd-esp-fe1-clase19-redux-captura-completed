@@ -1,17 +1,18 @@
 import { FC } from 'react'
+import Tweet from './Tweet'
 
-interface IProps{
+interface ITweets {
     data: string[]
 }
 
-const Tweets = ({data}: IProps) => {
+const Tweets = ({data}: ITweets) => {
       return (
     <>
         {data.length 
             ? data.map(tweet => (
-                <h2>{tweet}</h2>
+                <Tweet content={tweet} />
               ))
-            : <div>Tweets</div>
+            : null
         }
     </>
   )
