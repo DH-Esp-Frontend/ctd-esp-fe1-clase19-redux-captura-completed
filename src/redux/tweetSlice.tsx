@@ -10,8 +10,8 @@ const tweetSlice = createSlice({
     name: "tweets",
     initialState,
     reducers: {
-        addTweet: (state, action: PayloadAction<string[]>)=>{
-            state.data.push(...action.payload)
+        addTweet: (state, action: PayloadAction<string>)=>{
+            state.data.push(action.payload)
         }
     }
 })

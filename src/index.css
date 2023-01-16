@@ -65,8 +65,8 @@ img {
   margin-top: 50px;
   border-radius:15px;
   padding: 30px;
-  border-bottom: 1px solid #e6ecf0;
-  border-top: 1px solid #e6ecf0;
+  /* border-bottom: 1px solid #e6ecf0;
+  border-top: 1px solid #e6ecf0; */
 }
 
 .tweet-header {

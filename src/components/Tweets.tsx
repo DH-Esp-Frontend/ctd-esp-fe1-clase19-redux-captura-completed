@@ -1,12 +1,11 @@
-import { FC } from 'react'
+import { useAppSelector } from '../redux/hooks'
 import Tweet from './Tweet'
 
-interface ITweets {
-    data: string[]
-}
 
-const Tweets = ({data}: ITweets) => {
-      return (
+const Tweets = () => {
+    const data = useAppSelector(state => state.data)
+
+    return (
     <>
         {data.length 
             ? data.map(tweet => (

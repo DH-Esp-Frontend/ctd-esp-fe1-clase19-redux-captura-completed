@@ -1,10 +1,12 @@
 import { useState } from 'react'
 import Tweets from './components/Tweets'
 import Avatar from './components/Avatar'
+import { useAppDispatch } from './redux/hooks'
+import { addTweet } from './redux/tweetSlice'
 
 function App() {
+  const dispatch = useAppDispatch()
   const [text, setText] = useState<string>("")
-  const [tweets, setTweets] = useState<string[]>([])
 
   const handleChange = (e:  React.ChangeEvent<HTMLInputElement>) => {
     setText(e.target.value)
@@ -12,7 +14,7 @@ function App() {
 
   const handleSubmit = (e: React.FormEvent)=>{
       e.preventDefault()
-      setTweets([...tweets, text])
+      dispatch(addTweet(text))
       setText("")
   }
 
@@ -28,7 +30,7 @@ function App() {
         </form>
       </div>
       
-      <Tweets data={tweets} />
+      <Tweets />
     </div>
   )
 }
