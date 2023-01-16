@@ -1,3 +1,16 @@
+html, body {
+  margin:0;
+  padding:0;
+  font-family: 'Asap', sans-serif;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+   min-height:100%;;
+}
+
+body{
+ background: #e6ecf0;
+}
+
 .App{
  width: 50%;
  height: 100vh;
@@ -43,12 +56,7 @@ button:hover{
 
 }
 
-body {
-  background: #e6ecf0;
-  font-family: 'Asap', sans-serif;
-  font-family: 'Roboto', sans-serif;
 
-}
 img {
   max-width:100%;
 }
@@ -70,37 +78,53 @@ img {
 }
 
 .tweet-header {
+  background: #fff;
+  
   display: flex;
   align-items:flex-start;
   font-size:14px;
 }
 .tweet-header-info {
   font-weight:bold;
+  background: #fff;
+
 }
 .tweet-header-info span {
+  background: #fff;
+
   color:#657786;
   font-weight:normal;
   margin-left: 5px;
 }
 .tweet-header-info p {
+  background: #fff;
+
   font-weight:normal;
   margin-top: 5px;
   
 }
 .tweet-img-wrap {
+  background: #fff;
+
   padding-left: 60px;
 }
 
 .tweet-info-counts {
   display: flex;
+  background: #fff;
+
   margin-left: 60px;
   margin-top: 10px;
 }
 .tweet-info-counts div {
+  background: #fff;
+
   display: flex;
   margin-right: 20px;
 }
 .tweet-info-counts div svg {
+  background: #fff;
+
   color:#657786;
   margin-right: 10px;
   cursor: pointer;
