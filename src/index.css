@@ -129,6 +129,12 @@ img {
   margin-right: 10px;
   cursor: pointer;
 }
+
+.btn-fetch{
+  width: 60%;
+  border-radius: 0.3rem;
+}
+
 @media screen and (max-width:430px){
   body {
     padding-left: 20px;

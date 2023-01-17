@@ -19,7 +19,7 @@ const Tweets = () => {
               )
             : null
         }
-        <button onClick={()=> dispatch(getPosts())}>Fetch More</button>
+        <button className='btn-fetch' onClick={()=> dispatch(getPosts())}>Fetch More</button>
     </>
   )
 }
